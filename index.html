@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry Form</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="shortcut icon" type="image/x-icon" href="">
+     <link  href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+   <div class="form">
+    <div class="sections" id="sec1">
+       <div class="paperPlane"></div>
+        <h1>Enquiry Form</h1>
+        <button id="start" onclick="DisplaySection('sec2','sec1')">Start</button>
+    </div>
+    
+    <div class="sections animation" id="sec2">
+       <label for="name" class="textLabel">Name</label>
+        <span><input type="text" id="name"><i class="fas fa-user-alt"></i></span>
+        <button id="next1" class="next" onclick="DisplaySection('sec3','sec2')">Next</button>
+    </div>
+    
+    <div class="sections animation" id="sec3">
+       <label for="birthdate" class="textLabel">Date of Birth</label>
+        <span><input type="text" id="birthdate"><i class="fas fa-calendar-alt"></i></span>
+        <button id="next2" class="next" onclick="DisplaySection('sec4','sec3')">Next</button>
+    </div>
+    
+    <div class="sections animation" id="sec4">
+        <label for="achievements">Achievements</label>
+        <textarea rows="10" cols="10" id="achievements"></textarea>
+        <button id="next3" class="next" onclick="DisplaySection('sec5','sec4')">Next</button>
+    </div>
+    
+    <div class="sections animation" id="sec5">
+      
+       <p>Family Members</p>
+        <div>
+        <input type="checkbox" onclick="validate(1)"> No one
+        <input type="checkbox" onclick="validate(1)"> Father
+        <input type="checkbox" onclick="validate(1)" > Mother
+        </div>
+        
+        <div>
+        <input type="checkbox" onclick="validate(1)">Brother
+        <input type="checkbox" onclick="validate(1)"> Sister
+        <input type="checkbox" onclick="validate(1)">Other
+        </div>
+        <button id="next4" class="next" onclick="DisplaySection('sec6','sec5')">Next</button>
+      </div>
+    
+    <div  class="sections animation" id="sec6">
+        <button id="submit">Submit</button>
+    </div>
+   </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+       
+   
+       
